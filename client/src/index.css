@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+@layer components{
+    .h1_tag{
+        @apply block text-[2rem] mx-[0.67rem] font-bold
+    }
+    .btn-add{
+        @apply w-[30px] h-[30px] border-[1px] border-[solid] border-[#0071c2] text-[#0071c2] cursor-pointer bg-white
+    }
+    .btn-minus{
+        @apply disabled:cursor-[not-allowed] w-[30px] h-[30px] border-[1px] border-[solid] border-[#0071c2] text-[#0071c2] cursor-pointer bg-white
+    }
+    .plistItem{
+        @apply rounded-[10px] overflow-hidden cursor-pointer flex-1
+    }
+    .plistImg{
+        @apply w-full h-[150px] object-cover
+    }
+    .fpItem{
+        @apply flex-1 gap-[10px] flex flex-col
+    }
+    .fpImg{
+        @apply w-full
+    }
+    .fpName{
+        @apply font-bold    
+    }
+    .fpCity{
+        @apply font-light    
+    }
+    .fpPrice{
+        @apply font-medium    
+    }
+    .fpRating{
+        @apply bg-[#003580] text-white text-[14px]   
+    }
+    .fpbtn{
+        @apply bg-[#003580] text-white px-[4px] rounded-[5px] mr-[10px] font-bold
+    }
+    .mail{
+        @apply w-full mt-[50px] bg-[#003580] flex text-white flex-col items-center gap-5 p-[50px]
+    }   
+    .mailInputContainer{
+        @apply w-[300px] h-[38px] p-[10px] border-none mx-[10px] rounded-[5px]
+    }
+    .footer{
+        @apply w-full max-w-screen-lg font-[12px]
+    }
+    .fLists{
+        @apply w-full flex justify-between mb-[50px]  
+    }
+    .flist{
+        @apply p-0
+    }
+    .fListItem{
+        @apply mb-[8px] text-[#003580] cursor-pointer
+    }
+    .listContainer{
+        @apply flex justify-center mt-5
+    }
+    .listWrapper{
+        @apply w-full max-w-screen-lg flex gap-5
+    }
+    .listSearch{
+        @apply flex-[1] bg-[#febb02] p-[10px] rounded-[10px] sticky top-[10px] h-max
+    }
+    .lsTitle{
+        @apply text-[20px] text-[#555] mb-[10px]
+    }
+    .lsItem{
+        @apply flex flex-col gap-[5px] mb-[10px]
+    }
+    .lsOptionItem{
+        @apply flex justify-between mb-[10px] text-[#555] text-[12px]
+    }
+    .lsOptionInput{
+        @apply w-[50px]
+    }
+    .lsOptions{
+        @apply p-[10px]
+    }
+    .lsbtn{
+        @apply p-[10px] bg-[#0071c2] text-white border-none w-full font-medium cursor-pointer mb-2 rounded
+    }
+    .searchItem{
+        @apply border-[1px] border-solid border-[#555] p-[10px] rounded-[5px] flex justify-between gap-[20px] mb-5
+    }
+    .siImg{
+        @apply w-[200px] h-[200px] object-cover
+    }
+    .siDesc{
+        @apply flex flex-col gap-[9px] flex-[2]
+    }
+    .siTitle{
+        @apply text-xl text-[#0071c2] font-bold 
+    }
+    .siDistance{
+        @apply text-[12px]
+    }
+    .siTaxiOp{
+        @apply text-[12px] bg-[#008009] text-white w-max p-[3px] rounded-[5px]
+    }
+    .siSubtitle{
+        @apply text-[12px] font-bold
+    }
+    .siFeatures{
+        @apply text-[12px] 
+    }
+    .siCancelOp{
+        @apply text-[13px] text-[#008009] font-[750]
+    }
+    .siCancelOpSubtitle{
+        @apply  text-[13px] text-[#008009]
+    }
+    .siDetails{
+        @apply flex-[1] flex flex-col justify-between
+    }
+    .siRating{
+        @apply flex justify-between
+    }
+    .siRating>span{
+        @apply font-[500] text-[17px]
+    }
+    .siRating>button{
+        @apply font-[700] text-[12px] bg-[#003580] text-white p-[5px] border-none
+    }
+    .siDetailTexts{
+        @apply text-right flex flex-col gap-[5px]
+    }
+    .siPrice{
+        @apply text-2xl 
+    }
+    .siTaxOp{
+        @apply text-[12px] text-[gray] 
+    }
+    .siCheckButton{
+        @apply bg-[#0071c2] text-white font-bold px-[10px] py-[5px] border-none rounded-[5px] cursor-pointer
+    }
+    .hotelContainer{
+        @apply flex flex-col items-center mt-[20px]
+    }
+    .hotelWrapper{
+        @apply w-full max-w-5xl flex flex-col gap-[10px] relative
+    }
+    .bookNow_btn{
+        @apply absolute top-[10px] right-0 border-none px-[20px] py-[10px] bg-[#0071c2] text-white font-bold cursor-pointer rounded-[5px]
+    }
+    .hotelTitle{
+        @apply text-2xl font-bold
+    }
+    .hotelAddress{
+        @apply text-[12px] flex items-center gap-[10px]
+    }
+    .hotelDistance{
+        @apply text-[#0071c2] font-[500] 
+    }
+    .hotelPriceHighlight{
+        @apply text-[#008009] font-[500]
+    }
+    .hotelImages{
+        @apply flex flex-wrap justify-between
+    }
+    .hotelImgWrapper{
+        @apply w-[33%]
+    }
+    .hotelImg{
+        @apply w-full object-cover
+    }
+    .hotelDetails{
+        @apply flex justify-between gap-5 mt-5
+    }
+    .hotelDetailsTexts{
+        @apply flex-[3]
+    }
+    .hotelDesc{
+        @apply text-[14px] mt-5 
+    }
+    .hotelDetailsPrice{
+        @apply flex-[1] bg-[#ebf3ff] p-5 flex flex-col gap-5
+    }
+    .hotelDetailsPrice>h1{
+        @apply text-[18px] text-[#555] font-bold
+    }
+    .hotelDetailsPrice>span{
+        @apply text-[14px] 
+    }
+    .hotelDetailsPrice>h2{
+        @apply text-[20px] font-bold
+    }
+    .hotelDetailsPrice>button{
+        @apply bg-[#0071c2] text-white px-[20px] py-[10px] border-none rounded-[5px] cursor-pointer
+    }
+    .lButton{
+        @apply disabled:bg-[#0071c28c] disabled:cursor-not-allowed border-none px-[20px] mb-3 py-[10px] bg-[#0071c2] text-white font-bold cursor-pointer rounded-[5px]
+    }
+    .reserve{
+        @apply w-screen h-screen bg-[rgba(0,0,0,0.418)] fixed top-[0] left-[0] flex items-center justify-center
+    }
+    .rContainer{
+        @apply bg-white p-5 relative
+    }
+    .rClose{
+        @apply absolute top-[0] right-[0] cursor-pointer
+    }
+    .rItem{
+        @apply flex items-center gap-[50px] p-[20px]
+    }
+    .rInfo{
+        @apply flex flex-col gap-[5px]
+    }
+    .rTitle{
+        @apply font-[500]
+    }
+    .rDesc{
+        @apply font-[300]
+    }
+    .rMax{
+        @apply text-[12px]
+    }
+    .rPrice{
+        @apply font-[500]
+    }
+    .rSelectRooms{
+        @apply flex flex-wrap gap-[5px] text-[8px] text-[gray]
+    }
+    .room{
+        @apply flex flex-col
+    }
+    .rButton {
+        @apply border-[none] px-[20px] py-[10px] bg-[#0071c2] text-[white] font-bold cursor-pointer rounded-[5px] w-full mt-[20px]
+    }
+    .dropdownContent{
+        @apply absolute text-black font-[500] bg-white border border-gray-300 shadow-md p-1 flex flex-col z-10 capitalize cursor-pointer
+    }
+}  
